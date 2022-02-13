@@ -1,7 +1,10 @@
 // Code for Beginning Java's Cake & Cupcake Shop Tutorial
 
 import java.util.Scanner;  // Needed for the Scanner class to read input
-
+static void addItem(String item, int cost) {
+  totalCost+=cost;
+  addOnList+=item;
+}
 public class custom_order {
 
     // STEP 1 PRINTING HELLO WORLD TO CONSOLE
@@ -112,9 +115,14 @@ public class custom_order {
     System.out.println("Toppings: " + toppings);
     System.out.println("_________________________________________");
       
+	  //Total cost
+    int totalCost;
+    String addOnList;
 	  
-	  
-	  
+	  if (frostingType != "no"){
+    addItem(frostingType,2);
+    addOnList+=", ";
+}
     
     // TEST CODE
       
